@@ -1,0 +1,13 @@
+# requirements.txt
+# These pinned versions contain known CVEs — Snyk will flag them.
+# Great for showing the dependency vulnerability scanning feature.
+
+flask==1.0.2           # CVE-2018-1000656: ReDoS via crafted JSON
+requests==2.18.0       # CVE-2018-18074: credential exposure on redirect
+pyyaml==3.13           # CVE-2017-18342: arbitrary code exec via yaml.load()
+jinja2==2.10           # CVE-2019-10906: sandbox escape
+cryptography==2.3      # multiple CVEs: weak cipher support
+urllib3==1.22          # CVE-2018-20060: CRLF injection
+
+# After Snyk scan — Copilot Chat prompt:
+#   "Upgrade these packages to their latest secure versions"
